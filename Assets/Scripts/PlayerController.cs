@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
+    [SerializeField] private float speed;
     [SerializeField] private Rigidbody PlayerRGDBody;
 
     // Start is called before the first frame update
@@ -24,8 +25,11 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void Move(float speed) 
+    public void Move(float horizontal, float vertical) 
     {
-
+        Vector3 targetVelocity = new Vector3(horizontal, PlayerRGDBody.velocity.y, vertical);
+        targetVelocity = targetVelocity.normalized * speed;
+        
+        PlayerRGDBody.AddForce(targetVelocity);
     }
 }
