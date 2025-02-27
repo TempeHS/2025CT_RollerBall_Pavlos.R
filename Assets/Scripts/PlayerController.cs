@@ -32,4 +32,13 @@ public class PlayerController : MonoBehaviour
         
         PlayerRGDBody.AddForce(targetVelocity);
     }
+
+    private void OnTriggerEnter(Collider collision) {
+
+        if(collision.gameObject.tag == "Collectible") 
+        {
+            Destroy(collision.gameObject);
+        }
+
+    }
 }
