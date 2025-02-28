@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody PlayerRGDBody;
+    [SerializeField] private int score;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,8 @@ public class PlayerController : MonoBehaviour
 
         if(collision.gameObject.tag == "Collectible") 
         {
+
+            score += 1;
             Destroy(collision.gameObject);
         }
 

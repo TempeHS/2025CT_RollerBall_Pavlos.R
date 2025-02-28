@@ -14,7 +14,7 @@ public class CollectibleScript : MonoBehaviour
     void Update()
     {
         transform.Rotate(new Vector3(15, 30, 45) * Time.deltaTime);
-        transform.position = (new Vector3(transform.position.x, 0.5f, transform.position.y));
+
 
     }
 }
