@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
-    Material material;
+    [SerializeField] Material material;
 
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody PlayerRGDBody;
@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         deathAnimation = 1f;
 
 
-        material = GetComponent<SpriteRenderer>().material;
+        material = GetComponent<MeshRenderer>().material;
 
         DeathCounter = 0f;
     }
@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
         if(CanMove == true)
         {
-            Vector3 targetVelocity = new Vector3(horizontal, PlayerRGDBody.velocity.y, vertical);
+            Vector3 targetVelocity = new Vector3(horizontal, 0.0f, vertical);
             targetVelocity = targetVelocity.normalized * speed;
 
             PlayerRGDBody.AddForce(targetVelocity);

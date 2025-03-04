@@ -42,7 +42,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fade: 1.03
+    - _Fade: 3.18
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _alpha: 1
     m_Colors:
     - _Color: {r: 4, g: 0.5039374, b: 0, a: 0}
     - _Color_2: {r: 0, g: 22.27862, b: 28.07547, a: 0}
