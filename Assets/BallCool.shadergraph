@@ -94,9 +94,6 @@
             "m_Id": "7899548c8c7a4f7ba83fa2637baeb6ee"
         },
         {
-            "m_Id": "d97438e0eb5c412bbd0bdf370b981e93"
-        },
-        {
             "m_Id": "caa2af221aba432ab2cc6a75530a541f"
         }
     ],
@@ -400,20 +397,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "caa2af221aba432ab2cc6a75530a541f"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "d97438e0eb5c412bbd0bdf370b981e93"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "df87f17dafd140329b1a87a744848492"
                 },
                 "m_SlotId": 0
@@ -482,9 +465,6 @@
             },
             {
                 "m_Id": "c44269e1dabe4734b660143b7bab35b7"
-            },
-            {
-                "m_Id": "d97438e0eb5c412bbd0bdf370b981e93"
             }
         ]
     },
@@ -2238,36 +2218,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.ColorRGBMaterialSlot",
-    "m_ObjectId": "b2ca5cedab0b46f4bdca11951c468842",
-    "m_Id": 0,
-    "m_DisplayName": "Emission",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Emission",
-    "m_StageCapability": 2,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_Labels": [],
-    "m_ColorMode": 1,
-    "m_DefaultColor": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 1.0
-    }
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "b4e28a6012fa4cd6882f8b94b899c88a",
     "m_Group": {
@@ -2848,40 +2798,6 @@
     },
     "isMainColor": false,
     "m_ColorMode": 1
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.BlockNode",
-    "m_ObjectId": "d97438e0eb5c412bbd0bdf370b981e93",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "SurfaceDescription.Emission",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": 0.0,
-            "y": 0.0,
-            "width": 0.0,
-            "height": 0.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "b2ca5cedab0b46f4bdca11951c468842"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_SerializedDescriptor": "SurfaceDescription.Emission"
 }
 
 {
