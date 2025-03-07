@@ -290,7 +290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -145}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &319736141
@@ -1143,7 +1143,7 @@ GameObject:
   - component: {fileID: 1085528442}
   - component: {fileID: 1085528441}
   - component: {fileID: 1085528440}
-  - component: {fileID: 1085528439}
+  - component: {fileID: 1085528444}
   m_Layer: 5
   m_Name: gameModes
   m_TagString: Untagged
@@ -1151,20 +1151,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1085528439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085528438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f057c083844be34c8d7c8926aa98d4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  main: {fileID: 1616689715}
-  modes: {fileID: 1085528438}
 --- !u!114 &1085528440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1250,6 +1236,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1085528444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085528438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cea035a5005fa944ebe35ccec5557ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  main: {fileID: 1616689715}
+  modes: {fileID: 1085528438}
+  Scene: 0
 --- !u!1 &1190249892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,7 +1314,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.29411766}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.49803922}
-    m_SelectedColor: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
+    m_SelectedColor: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1333,8 +1334,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1085528439}
-        m_TargetAssemblyTypeName: TextController, Assembly-CSharp
+      - m_Target: {fileID: 1085528444}
+        m_TargetAssemblyTypeName: GameModesScript, Assembly-CSharp
         m_MethodName: Dark
         m_Mode: 1
         m_Arguments:
@@ -1433,8 +1434,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f057c083844be34c8d7c8926aa98d4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scene: 0
   main: {fileID: 0}
   modes: {fileID: 0}
+  gameMode: {fileID: 0}
 --- !u!114 &1511279117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1755,8 +1758,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f057c083844be34c8d7c8926aa98d4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scene: 0
   main: {fileID: 1616689715}
   modes: {fileID: 1085528438}
+  gameMode: {fileID: 1085528444}
 --- !u!1 &1800791705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,7 +1798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 6}
+  m_AnchoredPosition: {x: 0, y: -145}
   m_SizeDelta: {x: 250, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800791707
@@ -1840,8 +1845,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1085528439}
-        m_TargetAssemblyTypeName: TextController, Assembly-CSharp
+      - m_Target: {fileID: 1085528444}
+        m_TargetAssemblyTypeName: GameModesScript, Assembly-CSharp
         m_MethodName: Back
         m_Mode: 1
         m_Arguments:
@@ -1953,7 +1958,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.29411766}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.49803922}
-    m_SelectedColor: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
+    m_SelectedColor: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1973,8 +1978,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1085528439}
-        m_TargetAssemblyTypeName: TextController, Assembly-CSharp
+      - m_Target: {fileID: 1085528444}
+        m_TargetAssemblyTypeName: GameModesScript, Assembly-CSharp
         m_MethodName: Normal
         m_Mode: 1
         m_Arguments:

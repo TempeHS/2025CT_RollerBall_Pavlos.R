@@ -7,19 +7,20 @@ public class TextController : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    private int Scene;
+    [SerializeField] private int Scene;
 
     [SerializeField] private GameObject main;
     [SerializeField] private GameObject modes;
 
-    void start() {
+    [SerializeField] private GameModesScript gameMode;
+
+    void Start() {
         Scene = 1;
-        Back();
     }
 
     public void playGame()
     {
-        SceneManager.LoadScene(Scene);
+        SceneManager.LoadScene(gameMode.Scene);
     }
 
     public void GameModes() {
@@ -28,16 +29,5 @@ public class TextController : MonoBehaviour
         main.SetActive(false);
     }
 
-    public void Dark() {
-        Scene = 2;
-    }
 
-    public void Normal() {
-        Scene = 1;
-    }
-
-    public void Back() {
-        modes.SetActive(false);
-        main.SetActive(true);
-    }
 }
