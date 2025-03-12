@@ -21,11 +21,17 @@ public class GameModesScript : MonoBehaviour
     public void Dark()
     {
         Scene = 2;
+
+        modes.SetActive(false);
+        main.SetActive(true);
     }
 
     public void Normal()
     {
         Scene = 1;
+        
+        modes.SetActive(false);
+        main.SetActive(true);
     }
 
     public void Back()
