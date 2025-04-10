@@ -20,6 +20,10 @@ public class PlayerController : MonoBehaviour
 
     public TextMeshProUGUI Counter;
 
+    public GameObject You_Lose;
+    public GameObject You_Win;
+    public GameObject Enemies;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +32,10 @@ public class PlayerController : MonoBehaviour
         CanMove = true;
 
         health = 1;
+
+        You_Lose.SetActive(false);
+        You_Win.SetActive(false);
+        Enemies.SetActive(true);
 
         deathAnimation = 1f;
 
@@ -59,8 +67,15 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                You_Lose.SetActive(true);
                 Destroy(gameObject);
             }
+        }
+
+        if(score >= 16)
+        {
+            You_Win.SetActive(true);
+            Enemies.SetActive(false);
         }
 
 
